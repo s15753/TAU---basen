@@ -1,6 +1,6 @@
 package s15753.tau.labone.domain;
 
-public class Pool {
+public class Pool implements PoolManager{
     protected int id;
     protected Double length;
     protected Double width;
@@ -13,16 +13,29 @@ public class Pool {
         this.depth = depth;
     }
 
-    public void changeLength(Double length){
+    
 
+    public void setLength(Double length){
+        this.length = length;
     }
 
-    public void changeWidth(Double width){
-
+    public Double getLength(){
+        return this.length;
     }
 
-    public void changeDepth(Double depth){
-        
+    public void setWidth(Double width){
+        this.width = width;
     }
 
+    public Double getWidth(){
+        return this.width;
+    }
+
+    public void setDepth(Double depth){
+        this.depth = depth;
+    }
+
+    public Double getDepth(){
+        return this.depth;
+    }
 }

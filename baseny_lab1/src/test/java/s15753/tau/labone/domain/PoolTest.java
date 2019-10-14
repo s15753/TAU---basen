@@ -17,6 +17,9 @@ public class PoolTest {
         assertNotNull(new Pool(1, 2.2, 3.3, 4.4));
     }
 
-   
+   @Testpublic void poolAddedToDatabase() {
+       pool = new Pool(1, 2.2, 3.2, 4.1);
+       assertNotNull(Pool.addPool(pool));
+   }
 
 }
