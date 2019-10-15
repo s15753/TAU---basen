@@ -16,14 +16,14 @@ public class PoolTest {
         assertNotNull(new Pool(1, 2.2, 3.3, 4.4));
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void poolConstructorCanNotAcceptLessNumberOfDimensions() {
-        assertNull(new Pool(1, 2.2, 3.3));
+        ew Pool(1, 2.2, 3.3);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void poolConstructorCanNotAcceptMoreNumberOfDimensions() {
-        assertNull(new Pool(1, 2.2, 3.3, 4.4, 5));
+        new Pool(1, 2.2, 3.3, 4.4, 5);
     }
 
 }
