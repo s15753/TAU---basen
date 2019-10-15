@@ -18,7 +18,7 @@ public class PoolTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void poolConstructorCanNotAcceptLessNumberOfDimensions() {
-        ew Pool(1, 2.2, 3.3);
+        new Pool(1, 2.2, 3.3);
     }
 
     @Test(expected = IllegalArgumentException.class)
