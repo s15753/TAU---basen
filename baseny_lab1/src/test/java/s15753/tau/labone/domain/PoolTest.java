@@ -16,14 +16,5 @@ public class PoolTest {
         assertNotNull(new Pool(1, 2.2, 3.3, 4.4));
     }
 
-    @Test(expected = IllegalArgumentException.class)
-    public void poolConstructorCanNotAcceptLessNumberOfDimensions() {
-        new Pool(1, 2.2, 3.3);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void poolConstructorCanNotAcceptMoreNumberOfDimensions() {
-        new Pool(1, 2.2, 3.3, 4.4, 5);
-    }
 
 }
