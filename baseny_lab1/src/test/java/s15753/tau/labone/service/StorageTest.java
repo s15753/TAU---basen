@@ -12,11 +12,6 @@ import static org.hamcrest.CoreMatchers.*;
 @RunWith(JUnit4.class)
 public class StorageTest {
 
-    @Before
-    public void setUp(){
-        Pool pool_1 = new Pool(1, 2.0, 3.0, 4.0);
-        PoolStorageImpl storage = new PoolStorageImpl();
-    }
 
     @Test
     public void storageConstructorCanAcceptNumberOfDimensionsTest() {
@@ -25,8 +20,10 @@ public class StorageTest {
 
     @Test
     public void addEntryToStorageTest() {
+        PoolStorageImpl storage = new PoolStorageImpl();
         Pool pool_2 = new Pool(2, 4.0, 5.0, 6.0);
-        this.storage.create(pool_2);
+        storage.create(pool_2);
+        
         assertTrue(this.storage.get(2).getId() == 2);
     }
 
