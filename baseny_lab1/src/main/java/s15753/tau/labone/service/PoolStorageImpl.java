@@ -1,6 +1,6 @@
 package s15753.tau.labone.service;
 
-import java.util.ArrayList;
+import java.util.*;
 import s15753.tau.labone.domain.Pool.*;
 
 public class PoolStorageImpl {
@@ -10,5 +10,5 @@ public class PoolStorageImpl {
         this.storage = new HashMap<int,Pool>();
     }
 
-    
+
 }
