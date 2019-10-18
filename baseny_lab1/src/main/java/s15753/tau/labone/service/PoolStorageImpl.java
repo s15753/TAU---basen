@@ -4,5 +4,11 @@ import java.util.ArrayList;
 import s15753.tau.labone.domain.Pool.*;
 
 public class PoolStorageImpl {
+    Map<int,Pool> storage;
 
+    public PoolStorageImpl(){
+        this.storage = new HashMap<int,Pool>();
+    }
+
+    
 }
