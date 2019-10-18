@@ -23,8 +23,8 @@ public class StorageTest {
         PoolStorageImpl storage = new PoolStorageImpl();
         Pool pool_2 = new Pool(2, 4.0, 5.0, 6.0);
         storage.create(pool_2);
-        
-        assertTrue(this.storage.get(2).getId() == 2);
+
+        assertTrue(storage.get(2).getId() == 2);
     }
 
 
