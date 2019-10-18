@@ -1,7 +1,7 @@
 package s15753.tau.labone.service;
 
 import java.util.*;
-import s15753.tau.labone.domain.Pool.*;
+import s15753.tau.labone.domain.*;
 
 public class PoolStorageImpl {
     HashMap<Integer,Pool> storage;
