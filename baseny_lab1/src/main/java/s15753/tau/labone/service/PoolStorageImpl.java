@@ -23,19 +23,19 @@ public class PoolStorageImpl {
     }
 
     public Map<Integer,Pool> read(int id) throws Exception {
-        if(!this.storage.containsKey(id)
+        if(!this.storage.containsKey(id))
         {
             throw new Exception("Id not found");
         }
-        return this.storage.get(id));
+        return this.storage.get(id);
     }
 
     public void update(int id, Double length, Double width, Double depth) throws Exception {
-        if(!this.storage.containsKey(id)
+        if(!this.storage.containsKey(id))
         {
             throw new Exception("Id not found");
         }
-        Pool updatedPool = this.storage.get(id));
+        Pool updatedPool = this.storage.get(id);
         updatedPool.setLength(length);
         updatedPool.setWidth(width);
         updatedPool.setDepth(depth);
