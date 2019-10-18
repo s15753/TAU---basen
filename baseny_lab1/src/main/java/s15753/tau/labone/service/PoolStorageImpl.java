@@ -11,7 +11,7 @@ public class PoolStorageImpl {
     }
 
     public void create(Pool pool) throws Exception {
-        if(this.storage.containsKey(pool.getId())
+        if(this.storage.containsKey(pool.getId()))
         {
             throw new Exception("Id already added");
         }

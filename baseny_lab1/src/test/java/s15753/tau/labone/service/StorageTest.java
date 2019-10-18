@@ -26,7 +26,7 @@ public class StorageTest {
     public void addEntryToStorageTest() {
         Pool pool_2 = new Pool(2, 4.0, 5.0, 6.0);
         storage.create(pool_2);
-        assertTrue(storage.get(2).getId == 2);
+        assertTrue(storage.get(2).getId() == 2);
     }
 
 
