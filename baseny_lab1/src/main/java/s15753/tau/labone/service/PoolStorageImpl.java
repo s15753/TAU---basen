@@ -4,10 +4,10 @@ import java.util.*;
 import s15753.tau.labone.domain.Pool.*;
 
 public class PoolStorageImpl {
-    Map<int,Pool> storage;
+    HashMap<Integer,Pool> storage;
 
     public PoolStorageImpl(){
-        this.storage = new HashMap<int,Pool>();
+        this.storage = new HashMap<Integer,Pool>();
     }
 
 
