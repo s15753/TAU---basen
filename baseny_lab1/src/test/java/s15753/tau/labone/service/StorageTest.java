@@ -1,7 +1,6 @@
 package s15753.tau.labone.service;
 
 import static org.junit.Assert.*;
-import java.util.*;
 
 import s15753.tau.labone.domain.*;
 
@@ -13,17 +12,22 @@ import static org.hamcrest.CoreMatchers.*;
 @RunWith(JUnit4.class)
 public class StorageTest {
 
+    @Before
+    public void setUp(){
+        Pool pool_1 = new Pool(1, 2.0, 3.0, 4.0);
+        PoolStorageImpl storage = new PoolStorageImpl();
+    }
+
     @Test
     public void storageConstructorCanAcceptNumberOfDimensionsTest() {
         assertNotNull(new PoolStorageImpl());
     }
 
     @Test
-    public void addEntryToStorageTest() {Pool pool_1 = new Pool(1, 2.0, 3.0, 4.0);
-        PoolStorageImpl storage = new PoolStorageImpl();
+    public void addEntryToStorageTest() {
         Pool pool_2 = new Pool(2, 4.0, 5.0, 6.0);
-        storage.create(pool_2);
-        assertTrue(storage.get(2).getId() == 2);
+        this.storage.create(pool_2);
+        assertTrue(this.storage.get(2).getId() == 2);
     }
 
 
