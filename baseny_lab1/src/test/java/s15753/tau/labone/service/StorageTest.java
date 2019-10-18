@@ -14,7 +14,7 @@ public class StorageTest {
 
     @Before
     public void setUp(){
-        Poll pool_1 = new Pool(1, 2.0, 3.0, 4.0);
+        Pool pool_1 = new Pool(1, 2.0, 3.0, 4.0);
         PoolStorageImpl storage = new PoolStorageImpl();
         storage.put(1, pool_1);
     }
