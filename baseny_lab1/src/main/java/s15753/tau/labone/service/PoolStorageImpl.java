@@ -8,7 +8,7 @@ public class PoolStorageImpl {
 
     private ArrayList<Pool> storage = new ArrayList<Pool>(Arrays.asList(new Pool(1, 2.0, 3.0, 4.0)));
 
-    public void create(Pool pool) throws Exception {
+    public void create(Pool pool) {
 
         storage.add(pool);
     }
