@@ -5,10 +5,10 @@ import java.util.Arrays;
 import s15753.tau.labone.domain.Pool;
 
 public class PoolStorageImpl {
-    private ArrayList<Pool> storage = new ArrayList<Pool>(Arrays.asList(new Pool(1, 2.0, 3.0, 4.0)));
 
 
-    public void create(Pool pool)  {
+    public void create(Pool pool) throws Exception {
+        
         storage.add(pool);
     }
 
@@ -16,7 +16,14 @@ public class PoolStorageImpl {
         return storage;
     }
 
-
+    public ArrayList<Pool> read(Integer id) throws Exception {
+        for(Pool p: storage) {
+            if (p.getId() == id) {
+                return p;
+            }
+        }
+        throw new Exception("Id not found");
+    }
 
     public void update(int id, Double length, Double width, Double depth) throws Exception {
             for(Pool p: storage ) {
@@ -29,6 +36,14 @@ public class PoolStorageImpl {
         updatedPool.setWidth(width);
         updatedPool.setDepth(depth);
 
+    }
+
+    public void delete(Integer id) {
+        for(Pool p: storage) {
+            if(p.getId() == id) {
+                storage.remove(id);
+            }
+        }
     }
 
 }
