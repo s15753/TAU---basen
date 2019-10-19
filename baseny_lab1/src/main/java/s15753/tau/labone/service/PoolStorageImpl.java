@@ -18,12 +18,8 @@ public class PoolStorageImpl {
     }
 
 
-    public void update(int id, Double length, Double width, Double depth) throws Exception {
-            for(Pool p: storage ) {
-                if (p.getId() == id) {
-                    throw new IllegalArgumentException();
-                }
-            }
+    public void update(int id, Double length, Double width, Double depth) {
+
         Pool updatedPool = storage.get(id);
         updatedPool.setLength(length);
         updatedPool.setWidth(width);

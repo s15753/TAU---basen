@@ -19,7 +19,7 @@ public class StorageTest {
     }
 
     @Test
-    public void readAllEntriesFromStorage() {
+    public void readAllEntriesFromStorageTest() {
         PoolStorageImpl database = new PoolStorageImpl();
 
         assertEquals(1, database.readAll().get(0).getId());
@@ -33,6 +33,14 @@ public class StorageTest {
         database.create(pool);
 
         assertEquals(2, database.readAll().get(1).getId());
+    }
+
+    @Test
+    public void updateExistingEntryInDatabaseTest() {
+        PoolStorageImpl database = new PoolStorageImpl();
+        database.readAll().get(0).update(1, 9.1, 9.2, 9.3);
+
+        assertEquals(9.2, database.readAll().get(1).getWidth());s
     }
 
 
