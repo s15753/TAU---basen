@@ -30,6 +30,8 @@ public class StorageTest {
         PoolStorageImpl database = new PoolStorageImpl();
         Pool pool = new Pool(2, 5.0, 4.0, 3.0);
 
+        database.create(pool);
+
         assertEquals(2, database.readAll().get(1).getId());
     }
 
