@@ -1,41 +1,44 @@
 package s15753.tau.labone.service;
 
-import java.util.*;
-import s15753.tau.labone.domain.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import s15753.tau.labone.domain.Pool;
 
 public class PoolStorageImpl {
-    HashMap<Integer,Pool> storage;
-
-    public PoolStorageImpl(){
-        this.storage = new HashMap<Integer,Pool>();
-    }
+    private ArrayList<Pool> storage new ArrayList<Pool>(
+            Arrays.asList(
+            new Pool(1, 2.0, 3.0, 4.0))
+            );
 
     public void create(Pool pool) throws Exception {
-        if(this.storage.containsKey(pool.getId()))
-        {
-            throw new Exception("Id already added");
-        }
-        this.storage.put(pool.getId(), pool);
+        for(Pool p: storage ) {
+            if(p.getId() == pool.getId())
+            {
+                throw new IllegalArgumentException();
+            }
+        storage.add(pool);
     }
 
-    public Map<Integer,Pool> readAll() {
-        return this.storage;
+    public ArrayList<Pool> readAll() {
+        return storage;
     }
 
-    public Map<Integer,Pool> read(int id) throws Exception {
-        if(!this.storage.containsKey(id))
-        {
-            throw new Exception("Id not found");
+    public ArrayList<Pool> read(Integer id) throws Exception {
+        for(Pool p: storage) {
+            if (p.getId() == id) {
+                return p;
+            }
         }
-        return this.storage.get(id);
+        throw new Exception("Id not found");
     }
 
     public void update(int id, Double length, Double width, Double depth) throws Exception {
-        if(!this.storage.containsKey(id))
-        {
-            throw new Exception("Id not found");
-        }
-        Pool updatedPool = this.storage.get(id);
+            for(Pool p: storage ) {
+                if(p.getId() == id)
+                {
+                    throw new IllegalArgumentException();
+                }
+        Pool updatedPool = storage.get(id);
         updatedPool.setLength(length);
         updatedPool.setWidth(width);
         updatedPool.setDepth(depth);

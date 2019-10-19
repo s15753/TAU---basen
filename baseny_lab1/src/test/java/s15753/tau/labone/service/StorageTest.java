@@ -18,14 +18,4 @@ public class StorageTest {
         assertNotNull(new PoolStorageImpl());
     }
 
-    @Test
-    public void addEntryToStorageTest() {
-        PoolStorageImpl storage = new PoolStorageImpl();
-        Pool pool_2 = new Pool(2, 4.0, 5.0, 6.0);
-        storage.create(pool_2);
-
-        assertTrue(storage.read(2).getId() == 2);
-    }
-
-
 }
