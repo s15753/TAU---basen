@@ -21,14 +21,7 @@ public class PoolStorageImpl {
         return storage;
     }
 
-    public ArrayList<Pool> read(Integer id) throws Exception {
-        for(Pool p: storage) {
-            if (p.getId() == id) {
-                return p;
-            }
-        }
-        throw new Exception("Id not found");
-    }
+
 
     public void update(int id, Double length, Double width, Double depth) throws Exception {
             for(Pool p: storage ) {
