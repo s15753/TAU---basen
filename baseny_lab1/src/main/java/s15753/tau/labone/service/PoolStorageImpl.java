@@ -5,9 +5,8 @@ import java.util.Arrays;
 import s15753.tau.labone.domain.Pool;
 
 public class PoolStorageImpl {
-    private ArrayList<Pool> storage = new ArrayList<Pool>();
+    private ArrayList<Pool> storage = new ArrayList<Pool>(Arrays.asList(new Pool(1, 2.0, 3.0, 4.0));
 
-    storage.add(new Pool(1, 2.0, 3.0, 4.0));
 
     public void create(Pool pool) throws Exception {
         for(Pool p: storage ) {
