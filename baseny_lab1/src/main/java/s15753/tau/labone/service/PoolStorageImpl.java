@@ -8,7 +8,7 @@ public class PoolStorageImpl {
 
 
     public void create(Pool pool) throws Exception {
-        
+
         storage.add(pool);
     }
 
@@ -38,12 +38,5 @@ public class PoolStorageImpl {
 
     }
 
-    public void delete(Integer id) {
-        for(Pool p: storage) {
-            if(p.getId() == id) {
-                storage.remove(id);
-            }
-        }
-    }
 
 }
