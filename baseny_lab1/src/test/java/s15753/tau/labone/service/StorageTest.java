@@ -22,7 +22,7 @@ public class StorageTest {
     public void readAllEntriesFromStorage() {
         PoolStorageImpl database = new PoolStorageImpl();
 
-        assertEquals(1, database.read()[0].getId());
+        assertEquals(1, database.readAll()[0].getId());
     }
 
 }
