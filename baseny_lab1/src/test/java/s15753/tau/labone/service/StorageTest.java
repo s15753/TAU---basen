@@ -25,4 +25,14 @@ public class StorageTest {
         assertEquals(1, database.readAll().get(0).getId());
     }
 
+    @Test
+    public void createNewEntryTest() {
+        PoolStorageImpl database = new PoolStorageImpl();
+        Pool pool = new Pool(2, 5.0, 4.0, 3.0);
+
+        assertEquals(2, database.readAll().get(0).getId(1));
+    }
+
+
+
 }
