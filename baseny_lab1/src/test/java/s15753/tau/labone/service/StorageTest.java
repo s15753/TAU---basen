@@ -19,9 +19,10 @@ public class StorageTest {
     }
 
     @Test
-    public void createNewEntryInStorageTest() {
+    public void readAllEntriesFromStorage() {
         PoolStorageImpl database = new PoolStorageImpl();
-        Pool pool = new Pool(1, 2.0, 3.0, 4.0);
 
+        assertEquals(1, database.read()[0].getId());
     }
+
 }
