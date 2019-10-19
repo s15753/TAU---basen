@@ -38,8 +38,8 @@ public class StorageTest {
     @Test
     public void updateExistingEntryInDatabaseTest() {
         PoolStorageImpl database = new PoolStorageImpl();
-        database.readAll().get(0).update(1, 9.1, 9.2, 9.3);
-
+        Pool updtEntry = database.readAll().get(0);
+        updtEntry.update(1, 9.1, 9.2, 9.3);
         assertEquals(9.2, database.readAll().get(1).getWidth());
     }
 
