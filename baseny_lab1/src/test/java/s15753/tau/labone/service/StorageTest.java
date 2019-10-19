@@ -18,4 +18,10 @@ public class StorageTest {
         assertNotNull(new PoolStorageImpl());
     }
 
+    @Test
+    public void createNewEntryInStorageTest() {
+        PoolStorageImpl database = new PoolStorageImpl();
+        Pool pool = new Pool(1, 2.0, 3.0, 4.0);
+
+    }
 }
