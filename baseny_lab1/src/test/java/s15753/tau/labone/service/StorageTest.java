@@ -40,7 +40,7 @@ public class StorageTest {
         PoolStorageImpl database = new PoolStorageImpl();
         database.delete(1);
 
-        assertNull(database);
+        assertNull(1 != database.readAll().get(0).getId());
     }
 
 
