@@ -2,9 +2,9 @@ package s15753.tau.labone.domain;
 
 public class Pool{
     protected Integer id;
-    protected Double length;
-    protected Double width;
-    protected Double depth;
+    protected double length;
+    protected double width;
+    protected double depth;
     
     public Pool(Integer id, Double length, Double width, Double depth){
         this.id = id;
@@ -21,7 +21,7 @@ public class Pool{
         return this.id;
     }
 
-    public void setLength(Double length){
+    public void setLength(double length){
         this.length = length;
     }
 
@@ -29,7 +29,7 @@ public class Pool{
         return this.length;
     }
 
-    public void setWidth(Double width){
+    public void setWidth(double width){
         this.width = width;
     }
 
@@ -37,7 +37,7 @@ public class Pool{
         return this.width;
     }
 
-    public void setDepth(Double depth){
+    public void setDepth(double depth){
         this.depth = depth;
     }
 
