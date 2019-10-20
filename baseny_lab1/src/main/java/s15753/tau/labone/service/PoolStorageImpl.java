@@ -6,7 +6,7 @@ import s15753.tau.labone.domain.Pool;
 
 public class PoolStorageImpl {
 
-    private ArrayList<Pool> storage = new ArrayList<Pool>(Arrays.asList(new Pool(1, 2.0, 3.0, 4.0)));
+    private ArrayList<Pool> storage = new ArrayList<Pool>(Arrays.asList(new Pool(1, 2, 3, 4)));
 
     public void create(Pool pool) {
 
@@ -18,7 +18,7 @@ public class PoolStorageImpl {
     }
 
 
-    public void update(Integer id, Double length, Double width, Double depth) {
+    public void update(Integer id, Integer length, Integer width, Integer depth) {
         for(Pool p: storage) {
             if(p.getId() == id) {
                 p.setLength(length);

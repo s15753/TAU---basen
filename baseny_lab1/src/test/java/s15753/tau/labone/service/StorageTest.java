@@ -28,7 +28,7 @@ public class StorageTest {
     @Test
     public void createNewEntryInDatabaseTest() {
         PoolStorageImpl database = new PoolStorageImpl();
-        Pool pool = new Pool(2, 5.0, 4.0, 3.0);
+        Pool pool = new Pool(2, 5, 4, 3);
 
         database.create(pool);
 
@@ -38,10 +38,12 @@ public class StorageTest {
     @Test
     public void updateDatabaseEntryTest() {
         PoolStorageImpl database = new PoolStorageImpl();
-        database.update(1, 10.0, 10.0, 10.0);
+        database.update(1, 10, 10, 10);
 
-        assertEquals(10.0, database.readAll().get(0).getLength());
+        assertEquals((Integer)10, database.readAll().get(0).getLength());
     }
+
+    
 
 
 

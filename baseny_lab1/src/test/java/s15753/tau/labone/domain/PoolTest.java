@@ -13,7 +13,7 @@ public class PoolTest {
 
     @Test
     public void poolConstructorCanAcceptNumberOfDimensionsTest() {
-        assertNotNull(new Pool(1, 2.2, 3.3, 4.4));
+        assertNotNull(new Pool(1, 2, 3, 4));
     }
 
 
