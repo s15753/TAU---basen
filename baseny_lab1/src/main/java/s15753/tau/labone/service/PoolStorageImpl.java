@@ -30,7 +30,7 @@ public class PoolStorageImpl {
     public void delete(Integer id) {
         for(Pool p: storage) {
             if(p.getId() == id) {
-                storage.remove(p);
+                storage.remove(storage.indexOf(p));
             }
         }
     }
