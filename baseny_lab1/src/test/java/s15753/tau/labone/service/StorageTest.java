@@ -36,11 +36,11 @@ public class StorageTest {
     }
 
     @Test
-    public void updateExistingEntryInDatabaseTest() {
+    public void deleteEntryFromDatabaseTest() {
         PoolStorageImpl database = new PoolStorageImpl();
-        Pool updtEntry = database.readAll().get(0);
-        updtEntry.update(1, 9.1, 9.2, 9.3);
-        assertEquals(9.2, database.readAll().get(1).getWidth());
+        database.delete(1);
+
+        assertFalse(1, database.readAll().get(0).getId())
     }
 
 
