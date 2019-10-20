@@ -9,16 +9,44 @@ public class PoolStorageImpl {
     private ArrayList<Pool> storage = new ArrayList<Pool>(Arrays.asList(new Pool(1, 2, 3, 4)));
 
     public void create(Pool pool) {
-
+        for(Pool p: storage) {
+            if(p.getId() == pool.getId()) {
+                throw new IndexOutOfBoundsException("Id already exist");
+            }
+        }
         storage.add(pool);
     }
 
     public ArrayList<Pool> readAll() {
-        return storage;
+        if(storage.size() > 0) {
+            return storage;
+        }
+        else {
+            throw new IndexOutOfBoundsException("No entries in database");
+        }
     }
 
+    public Pool read(Integer id) {
+        Pool result = null;
+        for(Pool p: storage) {
+            if(p.getId() == id) {
+                result = p;
+            }
+        }
+        if (result == null) {
+            throw new IndexOutOfBoundsException("Id doesn't exist");
+        }
+
+        return result;
+    }
 
     public void update(Integer id, Integer length, Integer width, Integer depth) {
+        for(Pool p: storage) {
+            if(p.getId() != id) {
+                throw new IndexOutOfBoundsException("Id doesn't exist");
+            }
+        }
+
         for(Pool p: storage) {
             if(p.getId() == id) {
                 p.setLength(length);
@@ -30,9 +58,9 @@ public class PoolStorageImpl {
     }
 
     public void delete(Integer id) {
-        for(Pool p: storage) {
-            if(p.getId() == id) {
-                storage.remove(storage.indexOf(p));
+        for(int i = 0; i < storage.size(); i++) {
+            if(storage.get(i).getId() == id) {
+                storage.remove(i);
             }
         }
     }
