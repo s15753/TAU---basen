@@ -28,7 +28,7 @@ public class PoolStorageImpl {
     }
 
     public void delete(Integer id) {
-        for(int i = 0: i< storage.size(): i++Pool p: storage) {
+        for(int i = 0; i< storage.size(); i++) {
             if(storage[i].getId() == id) {
                 storage.remove(i);
             }
