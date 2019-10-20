@@ -22,7 +22,7 @@ public class PoolStorageImpl {
         for(Pool p: storage) {
             if(p.getId() == id) {
                 p.setLength(length);
-                p.setWidth((width);
+                p.setWidth(width);
                 p.setDepth(depth);
             }
         }
