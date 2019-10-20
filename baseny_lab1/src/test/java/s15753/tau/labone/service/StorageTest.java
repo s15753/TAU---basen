@@ -40,7 +40,7 @@ public class StorageTest {
         PoolStorageImpl database = new PoolStorageImpl();
         database.update(1, 10.0, 10.0, 10.0);
 
-        assertEquals(10.0, database.readAll().get(0).getLength());
+        assertEquals(double(10.0), double(database.readAll().get(0).getLength()));
     }
 
 
