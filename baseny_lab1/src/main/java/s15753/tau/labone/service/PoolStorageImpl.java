@@ -18,12 +18,14 @@ public class PoolStorageImpl {
     }
 
 
-    public void update(int id, Double length, Double width, Double depth) {
-
-        Pool updatedPool = storage.get(id);
-        updatedPool.setLength(length);
-        updatedPool.setWidth(width);
-        updatedPool.setDepth(depth);
+    public void update(Integer id, Double length, Double width, Double depth) {
+        for(Pool p: storage) {
+            if(p.getId() == id) {
+                p.setLength(length);
+                p.setWitdh(width);
+                p.setDepth(depth);
+            }
+        }
 
     }
 
