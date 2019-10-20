@@ -35,13 +35,7 @@ public class StorageTest {
         assertEquals(2, database.readAll().get(1).getId());
     }
 
-    @Test
-    public void deleteEntryFromDatabaseTest() {
-        PoolStorageImpl database = new PoolStorageImpl();
-        database.delete(1);
 
- 
-    }
 
 
 
