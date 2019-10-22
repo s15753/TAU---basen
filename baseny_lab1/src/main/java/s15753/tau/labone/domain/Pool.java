@@ -1,16 +1,32 @@
 package s15753.tau.labone.domain;
 
+import java.time.LocalDateTime;
+
 public class Pool{
-    protected Integer id;
-    protected Integer length;
-    protected Integer width;
-    protected Integer depth;
+    private Integer id;
+    private Integer length;
+    private Integer width;
+    private Integer depth;
+    private LocalDateTime add_dt;
+    private LocalDateTime last_updt_dt;
+    private LocalDateTime last_read_dt;
     
     public Pool(Integer id, Integer length, Integer width, Integer depth){
         this.id = id;
         this.length = length;
         this.width = width;
         this.depth = depth;
+
+    }
+
+    public Pool(Integer id, Integer length, Integer width, Integer depth, LocalDateTime add_dt, LocalDateTime last_updt_dt, LocalDateTime last_read_dt) {
+        this.id = id;
+        this.length = length;
+        this.width = width;
+        this.depth = depth;
+        this.add_dt = add_dt;
+        this.last_updt_dt = last_updt_dt;
+        this.last_read_dt = last_read_dt;
     }
 
     public void setId(Integer id){

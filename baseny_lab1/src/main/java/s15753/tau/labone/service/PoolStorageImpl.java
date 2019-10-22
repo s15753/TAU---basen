@@ -4,10 +4,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import s15753.tau.labone.domain.Pool;
 
-public class PoolStorageImpl {
+public class PoolStorageImpl implements PoolManager{
 
-    private ArrayList<Pool> storage = new ArrayList<Pool>(Arrays.asList(new Pool(1, 2, 3, 4)));
+    private ArrayList<Pool> storage;
 
+    public PoolStorageImpl() {
+        this.storage = new ArrayList<Pool>();
+    }
+
+    public PoolStorageImpl(Pool pool) {
+        this.storage = new ArrayList<Pool>();
+        storage.add(pool);
+    }
+
+    @Override
     public void create(Pool pool) {
         for(Pool p: storage) {
             if(p.getId() == pool.getId()) {
@@ -17,6 +27,7 @@ public class PoolStorageImpl {
         storage.add(pool);
     }
 
+    @Override
     public ArrayList<Pool> readAll() {
         if(storage.size() > 0) {
             return storage;
@@ -26,6 +37,7 @@ public class PoolStorageImpl {
         }
     }
 
+    @Override
     public Pool read(Integer id) {
         Pool result = null;
         for(Pool p: storage) {
@@ -40,6 +52,7 @@ public class PoolStorageImpl {
         return result;
     }
 
+    @Override
     public void update(Integer id, Integer length, Integer width, Integer depth) {
         for(Pool p: storage) {
             if(p.getId() != id) {
@@ -57,6 +70,7 @@ public class PoolStorageImpl {
 
     }
 
+    @Override
     public void delete(Integer id) {
         for(int i = 0; i < storage.size(); i++) {
             if(storage.get(i).getId() == id) {
