@@ -30,12 +30,12 @@ public class StorageTest {
 
     @Test
     public void readAllEntriesFromStorageTest() {
-        assertEquals(1, database.readAll().get(0).getId());
+        assertEquals((Integer)1, database.readAll().get(0).getId());
     }
 
         @Test
     public void readEntryWithIdTest() {
-        assertEquals(1, database.read(1).getId());
+        assertEquals((Integer)1, database.read(1).getId());
     }
 
     @Test
@@ -43,7 +43,7 @@ public class StorageTest {
         Pool pool = new Pool(2, 5, 4, 3);
         database.create(pool);
 
-        assertEquals(2, database.readAll().get(1).getId());
+        assertEquals((Integer)2, database.readAll().get(1).getId());
     }
 
     @Test
@@ -58,7 +58,7 @@ public class StorageTest {
         database.create(new Pool(2, 4, 6, 8));
         database.delete(1);
 
-        assertEquals(2, database.read(2).getId());
+        assertEquals((Integer)2, database.read(2).getId());
     }
 
 
