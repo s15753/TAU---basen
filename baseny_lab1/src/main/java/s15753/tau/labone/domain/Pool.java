@@ -11,10 +11,7 @@ public class Pool{
     private LocalDateTime add_dt;
     private LocalDateTime last_updt_dt;
     private LocalDateTime last_read_dt;
-    private Boolean is_add_dt = true;
-    private Boolean is_updt_dt = true;
-    private Boolean is_read_dt = true;
-    private Clock clock = Clock.systemDefaultZone();
+
 
     
     public Pool(Integer id, Integer length, Integer width, Integer depth) {
@@ -56,51 +53,17 @@ public class Pool{
         return this.depth;
     }
 
-    public void setAddDt() {
-        if(is_add_dt) {
-            this.add_dt = LocalDateTime.now(clock);
-        }
-    }
+
+    public void setAddDt(Clock clock) { this.add_dt = LocalDateTime.now(clock); }
 
     public LocalDateTime getAddDt() { return this.add_dt; }
 
-    public void setLastUpdtDt() {
-        if (is_updt_dt) {
-            this.last_updt_dt = LocalDateTime.now(clock);
-        }
-    }
+    public void setLastUpdtDt(Clock clock) { this.last_updt_dt = LocalDateTime.now(clock); }
 
     public LocalDateTime getLastUpdtDt() { return this.last_updt_dt; }
 
-    public void setLastReadDt() {
-        if (is_read_dt) {
-            this.last_read_dt = LocalDateTime.now(clock);
-        }
-    }
+    public void setLastReadDt(Clock clock) { this.last_read_dt = LocalDateTime.now(clock); }
 
     public LocalDateTime getLastReadDt() { return this.last_read_dt; }
 
-    public void settAddInd(Boolean is_add_dt) {
-        this.is_add_dt = is_add_dt;
-    }
-
-    public Boolean getAddInd() {
-        return this.is_add_dt;
-    }
-
-    public void settUpdtInd(Boolean is_updt_dt) {
-        this.is_updt_dt = is_updt_dt;
-    }
-
-    public Boolean getUpdtInd() {
-        return this.is_updt_dt;
-    }
-
-    public void settReadInd(Boolean is_updt_dt) {
-        this.is_read_dt = is_read_dt;
-    }
-
-    public Boolean getReadInd() {
-        return this.is_read_dt;
-    }
 }

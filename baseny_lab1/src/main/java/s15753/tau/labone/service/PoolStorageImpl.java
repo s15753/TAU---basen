@@ -1,12 +1,18 @@
 package s15753.tau.labone.service;
 
+import java.time.Clock;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import s15753.tau.labone.domain.Pool;
 
 public class PoolStorageImpl implements PoolManager{
 
     private ArrayList<Pool> storage;
+    private Clock clock;
+
+    private boolean is_add_dt = true;
+    private boolean is_updt_dt = true;
+    private boolean is_read_dt = true;
 
     public PoolStorageImpl() {
         this.storage = new ArrayList<Pool>();
@@ -17,14 +23,27 @@ public class PoolStorageImpl implements PoolManager{
         storage.add(pool);
     }
 
+    public void settAddInd(Boolean is_add_dt) { this.is_add_dt = is_add_dt; }
+
+    public boolean getAddInd() { return this.is_add_dt; }
+
+    public void settUpdtInd(Boolean is_updt_dt) { this.is_updt_dt = is_updt_dt; }
+
+    public boolean getUpdtInd() { return this.is_updt_dt; }
+
+    public void settReadInd(Boolean is_updt_dt) { this.is_read_dt = is_read_dt; }
+
+    public boolean getReadInd() { return this.is_read_dt; }
+
     @Override
     public void create(Pool pool) {
         for(Pool p: storage) {
-            if(p.getId() == pool.getId()) {
+            if (p.getId() == pool.getId()) {
                 throw new IndexOutOfBoundsException("Id already exist");
             }
         }
         storage.add(pool);
+
     }
 
     @Override

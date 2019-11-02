@@ -6,6 +6,18 @@ import java.util.ArrayList;
 
 public interface PoolManager {
 
+    public void settAddInd(Boolean is_add_dt);
+
+    public boolean getAddInd();
+
+    public void settUpdtInd(Boolean is_updt_dt);
+
+    public boolean getUpdtInd();
+
+    public void settReadInd(Boolean is_updt_dt);
+
+    public boolean getReadInd();
+
     public void create(Pool pool);
 
     public ArrayList<Pool> readAll();

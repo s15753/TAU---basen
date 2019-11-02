@@ -37,6 +37,7 @@ public class TimeLoggingTest {
 
     @InjectMocks
     Pool first_pool;
+    Pool second_pool;
 
     @Mock
     Clock clock;
@@ -55,11 +56,22 @@ public class TimeLoggingTest {
     @Before
     public void init() {
         first_pool = new Pool(1, 2, 3, 4);
+        second_pool = new Pool(2, 3, 4, 5);
         database = new PoolStorageImpl(first_pool);
     }
 
     @Test
-    public void OneTest() {
-        assertTrue(1==1);
+    public void defaultAddFlagSetToTrueTest() {
+        assertEquals(true, database.getAddInd());
+    }
+
+    @Test
+    public void defaultUpdtFlagSetToTrueTest() {
+        assertEquals(true, database.getUpdtInd());
+    }
+
+    @Test
+    public void defaultreadFlagSetToTrueTest() {
+        assertEquals(true, database.getReadInd());
     }
 }
