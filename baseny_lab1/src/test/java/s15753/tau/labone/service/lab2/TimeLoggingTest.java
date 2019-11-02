@@ -74,4 +74,13 @@ public class TimeLoggingTest {
     public void defaultreadFlagSetToTrueTest() {
         assertEquals(true, database.getReadInd());
     }
+
+    @Test
+    public void createNewEntityWithAddDtTest() {
+        mockTime(CREATE_TIME);
+
+        database.create(second_pool);
+
+        assertEquals(CREATE_TIME, second_pool.getAddDt());
+    }
 }
