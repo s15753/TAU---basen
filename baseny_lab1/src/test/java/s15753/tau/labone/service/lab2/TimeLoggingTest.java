@@ -42,12 +42,6 @@ public class TimeLoggingTest {
     @Mock
     Clock clock;
 
-    private void mockTime(LocalDateTime time) {
-        Clock fixedClock = Clock.fixed(time.atZone(ZoneId.systemDefault()).toInstant(), ZoneId.systemDefault());
-        doReturn(fixedClock.instant()).when(clock).instant();
-        doReturn(fixedClock.getZone()).when(clock).getZone();
-    }
-
     @Before
     public void initMocks() {
         MockitoAnnotations.initMocks(this);
@@ -57,7 +51,7 @@ public class TimeLoggingTest {
     public void init() {
         first_pool = new Pool(1, 2, 3, 4);
         second_pool = new Pool(2, 3, 4, 5);
-        database = new PoolStorageImpl(first_pool);
+        database = new PoolStorageImpl();
     }
 
     @Test
@@ -77,10 +71,10 @@ public class TimeLoggingTest {
 
     @Test
     public void createNewEntityWithAddDtTest() {
-        mockTime(CREATE_TIME);
+        database.create(first_pool);
 
-        database.create(second_pool);
-
-        assertEquals(CREATE_TIME, second_pool.getAddDt());
+        assertNotNull(database.read(1).getAddDt());
     }
+
+
 }

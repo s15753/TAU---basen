@@ -42,7 +42,11 @@ public class PoolStorageImpl implements PoolManager{
                 throw new IndexOutOfBoundsException("Id already exist");
             }
         }
-        storage.add(pool);
+        if(is_add_dt){
+            pool.setAddDt(Clock.systemDefaultZone());
+            storage.add(pool);
+        }
+        else { storage.add(pool); }
 
     }
 
