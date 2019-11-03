@@ -76,5 +76,13 @@ public class TimeLoggingTest {
         assertNotNull(database.read(1).getAddDt());
     }
 
+    @Test
+    public void createNewEntityWithoutAddDtTest() {
+        database.settAddInd(false);
+        database.create(second_pool);
+
+        assertNull(database.read(2).getAddDt());
+    }
+
 
 }
