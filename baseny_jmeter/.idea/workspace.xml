@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30bff1e4-8c39-4350-b544-88f5e11b30f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../baseny_lab1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baseny_lab1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseny_lab1/src/main/java/s15753/tau/labone/service/PoolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baseny_lab1/src/main/java/s15753/tau/labone/service/PoolManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseny_lab1/src/test/java/s15753/tau/labone/service/lab2/TimeLoggingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baseny_lab1/src/test/java/s15753/tau/labone/service/lab2/TimeLoggingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellocucumber/hellocucumber.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1U92VclmEzPhmSUIHAQzx05oHHj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s15753.tau.labone.App" />
+      <module name="baseny_lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="s15753.tau.labone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CRUD.jmx" type="idea.plugin.jmeter.run.JmeterConfigurationType" factoryName="JMeter" temporary="true">
+      <setting name="testFile" value="$PROJECT_DIR$/src/test/java/s15753/tau/labone/service/CRUD.jmx" />
+      <setting name="propertyFile" value="" />
+      <setting name="jvmParameters" value="" />
+      <setting name="customParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <properties />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="JMeter.CRUD.jmx" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30bff1e4-8c39-4350-b544-88f5e11b30f4" name="Default Changelist" comment="" />
+      <created>1574754516617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574754516617</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1061" y="400" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1574797248206">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="1061" y="400" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.923@67.27.1853.923" timestamp="1574797248206" />
+    <state x="798" y="166" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1574797244885">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="798" y="166" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1853.923@67.27.1853.923" timestamp="1574797244885" />
+    <state width="1354" height="222" key="GridCell.Tab.0.bottom" timestamp="1574885392584">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.bottom/67.27.1853.923@67.27.1853.923" timestamp="1574885392584" />
+    <state width="1354" height="222" key="GridCell.Tab.0.center" timestamp="1574885392576">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.center/67.27.1853.923@67.27.1853.923" timestamp="1574885392576" />
+    <state width="1354" height="222" key="GridCell.Tab.0.left" timestamp="1574885392575">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.left/67.27.1853.923@67.27.1853.923" timestamp="1574885392575" />
+    <state width="1354" height="222" key="GridCell.Tab.0.right" timestamp="1574885392583">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state width="1354" height="222" key="GridCell.Tab.0.right/67.27.1853.923@67.27.1853.923" timestamp="1574885392583" />
+    <state x="813" y="67" key="SettingsEditor" timestamp="1574796774704">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="813" y="67" key="SettingsEditor/67.27.1853.923@67.27.1853.923" timestamp="1574796774704" />
+    <state x="649" y="316" key="com.intellij.ide.util.TipDialog" timestamp="1574796488703">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="649" y="316" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1574796488703" />
+  </component>
+</project>

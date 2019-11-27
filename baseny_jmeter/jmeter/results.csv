@@ -1,0 +1,16 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1574885314129,166,addPoolRequest,200,OK,Settings 1-1,text,true,,201,227,1,1,http://localhost:8080/api/pool,164,0,125
+1574885314299,9,addPoolRequest,200,OK,Settings 1-1,text,true,,201,227,1,1,http://localhost:8080/api/pool,9,0,0
+1574885314314,11,addPoolRequest,200,OK,Settings 1-1,text,true,,201,227,1,1,http://localhost:8080/api/pool,11,0,0
+1574885314327,14,addPoolRequest,200,OK,Settings 1-1,text,true,,200,226,1,1,http://localhost:8080/api/pool,13,0,0
+1574885314344,7,addPoolRequest,200,OK,Settings 1-1,text,true,,200,226,1,1,http://localhost:8080/api/pool,6,0,0
+1574885314354,12,addPoolRequest,200,OK,Settings 1-1,text,true,,201,227,1,1,http://localhost:8080/api/pool,12,0,0
+1574885314371,8,addPoolRequest,200,OK,Settings 1-1,text,true,,201,227,1,1,http://localhost:8080/api/pool,8,0,0
+1574885314382,11,addPoolRequest,200,OK,Settings 1-1,text,true,,200,226,1,1,http://localhost:8080/api/pool,11,0,0
+1574885314394,10,addPoolRequest,200,OK,Settings 1-1,text,true,,202,228,1,1,http://localhost:8080/api/pool,10,0,0
+1574885314690,12,GetAllPools,200,OK,Thread Group 1-1,text,true,,538,125,1,1,http://localhost:8080/api/pools,12,0,1
+1574885314705,0,deletePool,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 32: http://localhost:8080/api/pool/${ID_2},Thread Group 1-1,text,false,,1173,0,1,1,http://localhost:8080/api/pool/${ID_2},0,0,0
+1574885314708,0,GetDeletedPool,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 33: http://localhost:8080/api/pools/${ID_2},Thread Group 1-1,text,false,Test failed: code expected to match /404/,1174,0,1,1,http://localhost:8080/api/pools/${ID_2},0,0,0
+1574885314710,0,updatePool,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 32: http://localhost:8080/api/pool/${ID_1},Thread Group 1-1,text,false,,1173,0,1,1,http://localhost:8080/api/pool/${ID_1},0,0,0
+1574885314711,0,getUpdatedPool,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in path at index 33: http://localhost:8080/api/pools/${ID_1},Thread Group 1-1,text,false,Test failed: text expected to contain /222/,1174,0,1,1,http://localhost:8080/api/pools/${ID_1},0,0,0
+1574885314728,12,HTTP Request,200,OK,tearDown Thread Group 1-1,text,true,,160,211,1,1,http://localhost:8080/api/pools,11,0,2

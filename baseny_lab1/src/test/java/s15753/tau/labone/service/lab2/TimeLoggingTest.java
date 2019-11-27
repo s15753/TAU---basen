@@ -40,7 +40,13 @@ public class TimeLoggingTest {
     Pool second_pool;
 
     @Mock
-    Clock clock;
+    LocalDateTime add_dt;
+
+    @Mock
+    LocalDateTime last_updt_dt;
+
+    @Mock
+    LocalDateTime last_read_dt;
 
     @Before
     public void initMocks() {
@@ -82,6 +88,14 @@ public class TimeLoggingTest {
         database.create(second_pool);
 
         assertNull(database.read(2).getAddDt());
+    }
+
+    @Test
+    public void verifyAddDtTest() {
+        database.create(first_pool);
+        Mockito.when(database.read(1).getAddDt()).thenReturn(CREATE_TIME);
+
+        assertEquals(CREATE_TIME, database.read(1).getAddDt());
     }
 
 

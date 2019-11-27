@@ -1,0 +1,45 @@
+[Server@b1bc7ed]: [Thread[main,5,main]]: checkRunning(false) entered
+[Server@b1bc7ed]: [Thread[main,5,main]]: checkRunning(false) exited
+[Server@b1bc7ed]: Startup sequence initiated from main() method
+[Server@b1bc7ed]: Could not load properties from file
+[Server@b1bc7ed]: Using cli/default properties only
+[Server@b1bc7ed]: Initiating startup sequence...
+[Server@b1bc7ed]: Server socket opened successfully in 14 ms.
+[Server@b1bc7ed]: Database [index=0, id=0, db=mem:mydb, alias=workdb] opened successfully in 1184 ms.
+[Server@b1bc7ed]: Startup sequence completed in 1203 ms.
+[Server@b1bc7ed]: 2019-11-26 21:02:44.158 HSQLDB server 2.3.4 is online on port 9001
+[Server@b1bc7ed]: To close normally, connect and execute SHUTDOWN SQL
+[Server@b1bc7ed]: From command line, use [Ctrl]+[C] to abort abruptly
+[Server@b1bc7ed]: [Thread[main,5,main]]: checkRunning(false) entered
+[Server@b1bc7ed]: [Thread[main,5,main]]: checkRunning(false) exited
+[Server@b1bc7ed]: Startup sequence initiated from main() method
+[Server@b1bc7ed]: Could not load properties from file
+[Server@b1bc7ed]: Using cli/default properties only
+[Server@b1bc7ed]: Initiating startup sequence...
+[Server@b1bc7ed]: [Thread[HSQLDB Server @b1bc7ed,5,main]]: run()/openServerSocket(): 
+java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:381)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:243)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:135)
+	at org.hsqldb.server.HsqlSocketFactory.createServerSocket(Unknown Source)
+	at org.hsqldb.server.Server.openServerSocket(Unknown Source)
+	at org.hsqldb.server.Server.run(Unknown Source)
+	at org.hsqldb.server.Server.access$000(Unknown Source)
+	at org.hsqldb.server.Server$ServerThread.run(Unknown Source)
+[Server@b1bc7ed]: Initiating shutdown sequence...
+[Server@b1bc7ed]: Shutdown sequence completed in 8 ms.
+[Server@b1bc7ed]: 2019-11-26 21:04:33.355 SHUTDOWN : System.exit() is called next
+[Server@b1bc7ed]: [Thread[main,5,main]]: checkRunning(false) entered
+[Server@b1bc7ed]: [Thread[main,5,main]]: checkRunning(false) exited
+[Server@b1bc7ed]: Startup sequence initiated from main() method
+[Server@b1bc7ed]: Could not load properties from file
+[Server@b1bc7ed]: Using cli/default properties only
+[Server@b1bc7ed]: Initiating startup sequence...
+[Server@b1bc7ed]: Server socket opened successfully in 15 ms.
+[Server@b1bc7ed]: Database [index=0, id=0, db=mem:mydb, alias=workdb] opened successfully in 947 ms.
+[Server@b1bc7ed]: Startup sequence completed in 964 ms.
+[Server@b1bc7ed]: 2019-11-26 21:06:49.521 HSQLDB server 2.3.4 is online on port 9001
+[Server@b1bc7ed]: To close normally, connect and execute SHUTDOWN SQL
+[Server@b1bc7ed]: From command line, use [Ctrl]+[C] to abort abruptly
