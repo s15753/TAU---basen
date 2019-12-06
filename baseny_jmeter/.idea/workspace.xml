@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30bff1e4-8c39-4350-b544-88f5e11b30f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../baseny_lab1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../baseny_lab1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseny_lab1/src/main/java/s15753/tau/labone/service/PoolManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baseny_lab1/src/main/java/s15753/tau/labone/service/PoolManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseny_lab1/src/test/java/s15753/tau/labone/service/lab2/TimeLoggingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../baseny_lab1/src/test/java/s15753/tau/labone/service/lab2/TimeLoggingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hellocucumber/hellocucumber.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,9 +127,9 @@
       <screen x="67" y="27" width="1853" height="923" />
     </state>
     <state x="813" y="67" key="SettingsEditor/67.27.1853.923@67.27.1853.923" timestamp="1574796774704" />
-    <state x="649" y="316" key="com.intellij.ide.util.TipDialog" timestamp="1574796488703">
+    <state x="649" y="316" key="com.intellij.ide.util.TipDialog" timestamp="1574886675315">
       <screen x="67" y="27" width="1853" height="923" />
     </state>
-    <state x="649" y="316" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1574796488703" />
+    <state x="649" y="316" key="com.intellij.ide.util.TipDialog/67.27.1853.923@67.27.1853.923" timestamp="1574886675315" />
   </component>
 </project>
