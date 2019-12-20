@@ -43,7 +43,7 @@ public class RegistrationTest {
         driver.findElement(By.id("email_create")).sendKeys("robert655@robert.pl" + Keys.ENTER);
         WebElement secondCheck = wait.until(presenceOfElementLocated(By.xpath("/html/body/div[1]/div[2]/div/div[3]/div/div/form/div[1]/h3")));
 
-        assertEquals("Your personal information", secondCheck.getText().toString());
+        assertEquals("YOUR PERSONAL INFORMATION", secondCheck.getText().toString());
 
         driver.findElement(By.id("id_gender1")).click();
         driver.findElement(By.id("customer_firstname")).sendKeys("Robert");
@@ -51,7 +51,7 @@ public class RegistrationTest {
         driver.findElement(By.id("passwd")).sendKeys("qwert1");
         driver.findElement(By.id("address1")).sendKeys("301 E Dave Ward Dr");
         driver.findElement(By.id("city")).sendKeys("Conway");
-        Select state = new Select(driver.findElement(By.id("id_state")));
+        Select state = new Select(driver.findElement(By.id("")));
         state.selectByVisibleText("Arkansas");
         driver.findElement(By.id("postcode")).sendKeys("72032");
         driver.findElement(By.id("phone_mobile")).sendKeys("333444555");
@@ -59,7 +59,7 @@ public class RegistrationTest {
 
         WebElement thirdCheck = wait.until(presenceOfElementLocated(By.xpath("/html/body/div[1]/div[2]/div/div[3]/div/h1")));
 
-        assertEquals("My account", thirdCheck.getText().toString());
+        assertEquals("MY ACCOUNT", thirdCheck.getText().toString());
     }
 
 }
