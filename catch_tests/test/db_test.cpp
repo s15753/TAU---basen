@@ -7,6 +7,5 @@
 
 TEST_CASE("tworzenie bazy danych", "[db]")
 {
-		using namespace std;
-		SECTION
+
 }
